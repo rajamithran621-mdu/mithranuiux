@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mithran R — UI/UX Designer from Madurai, India. Designing intuitive digital experiences." />
+  <meta name="keywords" content="UI UX Designer, Figma, Wireframing, Prototyping, Madurai, Product Design" />
+  <meta name="author" content="Mithran R" />
+  <meta property="og:title" content="Mithran R — UI/UX Designer" />
+  <meta property="og:description" content="Designing intuitive digital experiences." />
+  <meta property="og:type" content="website" />
+  <title>Mithran R — UI/UX Designer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+<!-- Cursor dot -->
+<div id="cursor-dot"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVBAR
+     ═══════════════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">MR<span>.</span></a>
+
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <!-- Sun -->
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- Moon -->
+        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+
+      <button id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<nav id="nav-drawer">
+  <a href="#about">About</a>
+  <a href="#projects">Work</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <!-- Blobs -->
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="hero-blob hero-blob-3"></div>
+  <!-- Grid -->
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Available for opportunities</div>
+
+    <h1 class="hero-title">
+      Designing<br>
+      <em>Intuitive</em><br>
+      <span class="underline-gold">
+        Digital Experiences
+        <svg viewBox="0 0 300 14" preserveAspectRatio="none">
+          <path d="M2 9 C60 3, 120 13, 180 7 S260 2, 298 8" />
+        </svg>
+      </span>
+    </h1>
+
+    <p class="hero-sub">
+      UI/UX Designer passionate about creating<br>user-friendly digital products.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">
+        <span>View Work</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="/resume" class="btn btn-outline">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Download Resume
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">2+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">10+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">User-Focused</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+
+  <div class="hero-location">Madurai, India</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="divider" style="margin-bottom: 80px;"></div>
+    <div class="about-grid">
+
+      <!-- Visual card -->
+      <div class="about-visual reveal">
+        <div class="about-card">
+  <img src="{{ url_for('static', filename='images/mithran.jpg') }}" 
+       alt="Mithran R" 
+       style="width:100%; height:100%; object-fit:cover; border-radius:inherit;" />
+  <div class="about-card-role">UI / UX Designer</div>
+  ...
+</div>
+          <div class="corner-dot dot-tl"></div>
+          <div class="corner-dot dot-tr"></div>
+          <div class="corner-dot dot-bl"></div>
+          <div class="corner-dot dot-br"></div>
+        </div>
+        <!-- Floating badges -->
+        <div class="about-badge badge-location">
+          <span class="about-badge-label">Based in</span>
+          <span class="about-badge-value">Madurai, India</span>
+        </div>
+        <div class="about-badge badge-focus">
+          <span class="about-badge-label">Speciality</span>
+          <span class="about-badge-value">User-Centered Design</span>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="about-text">
+        <div class="reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">
+            Crafting clarity<br>
+            <em>through design</em>
+          </h2>
+        </div>
+
+        <p class="about-description reveal reveal-delay-1">
+          Creative and detail-oriented UI/UX Designer with experience in user research,
+          wireframing, and prototyping. Skilled in designing intuitive mobile and web
+          interfaces using Figma. Passionate about improving usability through thoughtful,
+          purposeful design decisions.
+        </p>
+
+        <div class="about-tags reveal reveal-delay-2">
+          <span class="tag">UI Design</span>
+          <span class="tag">UX Design</span>
+          <span class="tag">Wireframing</span>
+          <span class="tag">Prototyping</span>
+          <span class="tag">User Research</span>
+          <span class="tag">Figma</span>
+        </div>
+
+        <blockquote class="about-quote reveal reveal-delay-3">
+          <p>"Good design is invisible — it just works."</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PROJECTS
+     ═══════════════════════════════════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="divider" style="margin-bottom: 80px;"></div>
+
+    <div class="projects-header">
+      <div class="reveal">
+        <span class="section-label">Featured Work</span>
+        <h2 class="section-title">
+          Selected<br><em>projects</em>
+        </h2>
+      </div>
+      <p class="reveal reveal-delay-1">Real-world products designed with purpose, clarity, and user empathy.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card project-card-1 reveal">
+        <div class="project-num project-num-1">
+          <span>01</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h3 class="project-title">Lab Record System</h3>
+        <p class="project-category">Web Application · UI Design</p>
+        <div class="project-divider"></div>
+
+        <div class="project-highlights">
+          <div class="project-highlight">
+            <span class="project-dot"></span>
+            Designed a simple and intuitive interface for digital lab record management
+          </div>
+          <div class="project-highlight">
+            <span class="project-dot"></span>
+            Improved data organization and overall usability for students and faculty
+          </div>
+          <div class="project-highlight">
+            <span class="project-dot"></span>
+            Focused on clean layouts and accessibility-first design principles
+          </div>
+        </div>
+
+        <div class="project-mockup">
+          <div class="mockup-bar">
+            <div class="mockup-dot mockup-dot-r"></div>
+            <div class="mockup-dot mockup-dot-y"></div>
+            <div class="mockup-dot mockup-dot-g"></div>
+            <div class="mockup-url">lab-record-system.onrender.com</div>
+          </div>
+          <div class="mockup-body">Lab Record System</div>
+        </div>
+
+        <a href="https://lab-record-system.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link">
+          View Live Project
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card project-card-2 reveal reveal-delay-2">
+        <div class="project-num project-num-2">
+          <span>02</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h3 class="project-title">PortReady</h3>
+        <p class="project-category">Platform · UX Design</p>
+        <div class="project-divider"></div>
+
+        <div class="project-highlights">
+          <div class="project-highlight">
+            <span class="project-dot"></span>
+            Designed a placement preparation platform tailored for students
+          </div>
+          <div class="project-highlight">
+            <span class="project-dot"></span>
+            Focused on clarity, structured content hierarchy and intuitive navigation
+          </div>
+          <div class="project-highlight">
+            <span class="project-dot"></span>
+            Optimized UI for faster navigation and a better learning experience
+          </div>
+        </div>
+
+        <div class="project-mockup">
+          <div class="mockup-bar">
+            <div class="mockup-dot mockup-dot-r"></div>
+            <div class="mockup-dot mockup-dot-y"></div>
+            <div class="mockup-dot mockup-dot-g"></div>
+            <div class="mockup-url">portready-placement-helper.onrender.com</div>
+          </div>
+          <div class="mockup-body">PortReady – Placement Helper</div>
+        </div>
+
+        <a href="https://portready-placement-helper.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link">
+          View Live Project
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SKILLS
+     ═══════════════════════════════════════════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="divider" style="margin-bottom: 80px;"></div>
+
+    <div class="skills-header">
+      <div class="reveal">
+        <span class="section-label">Capabilities</span>
+        <h2 class="section-title">Skills &amp; <em>expertise</em></h2>
+        <p>Areas where design meets function.</p>
+      </div>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- UI Design -->
+      <div class="skill-card skill-card-1 reveal">
+        <div class="skill-icon skill-icon-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+            <path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/>
+          </svg>
+        </div>
+        <h3 class="skill-category">UI Design</h3>
+        <p class="skill-desc">Pixel-perfect visual interfaces</p>
+        <div class="skill-divider"></div>
+        <ul class="skill-list">
+          <li class="skill-item"><span class="skill-bullet"></span>Typography</li>
+          <li class="skill-item"><span class="skill-bullet"></span>Color Theory</li>
+          <li class="skill-item"><span class="skill-bullet"></span>Responsive Design</li>
+          <li class="skill-item"><span class="skill-bullet"></span>Visual Hierarchy</li>
+        </ul>
+      </div>
+
+      <!-- UX Design -->
+      <div class="skill-card skill-card-2 reveal reveal-delay-1">
+        <div class="skill-icon skill-icon-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/>
+            <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
+            <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
+          </svg>
+        </div>
+        <h3 class="skill-category">UX Design</h3>
+        <p class="skill-desc">Engineering seamless journeys</p>
+        <div class="skill-divider"></div>
+        <ul class="skill-list">
+          <li class="skill-item"><span class="skill-bullet"></span>User Flow</li>
+          <li class="skill-item"><span class="skill-bullet"></span>Wireframing</li>
+          <li class="skill-item"><span class="skill-bullet"></span>Prototyping</li>
+          <li class="skill-item"><span class="skill-bullet"></span>Usability Principles</li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-card skill-card-3 reveal reveal-delay-2">
+        <div class="skill-icon skill-icon-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <h3 class="skill-category">Tools</h3>
+        <p class="skill-desc">Industry-standard toolchain</p>
+        <div class="skill-divider"></div>
+        <ul class="skill-list">
+          <li class="skill-item"><span class="skill-bullet"></span>Figma</li>
+          <li class="skill-item"><span class="skill-bullet"></span>Adobe XD</li>
+          <li class="skill-item"><span class="skill-bullet"></span>Canva</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Marquee -->
+    <div class="skills-marquee reveal">
+      <div class="marquee-track">
+        <span class="marquee-item">UI Design <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">User Research <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Figma <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Wireframing <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Prototyping <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">UX Strategy <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Visual Design <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Adobe XD <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Usability Testing <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Color Theory <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Typography <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Responsive Design <span class="marquee-dot">✦</span></span>
+        <!-- Duplicate for seamless loop -->
+        <span class="marquee-item">UI Design <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">User Research <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Figma <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Wireframing <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Prototyping <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">UX Strategy <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Visual Design <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Adobe XD <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Usability Testing <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Color Theory <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Typography <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Responsive Design <span class="marquee-dot">✦</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="divider" style="margin-bottom: 80px;"></div>
+
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div>
+        <div class="reveal">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">Let's work <em>together</em></h2>
+        </div>
+        <p class="contact-description reveal reveal-delay-1">
+          I'm always open to discussing new projects,<br>
+          creative ideas, or opportunities.
+        </p>
+
+        <div class="contact-items reveal reveal-delay-2">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-item-label">Email</span>
+              <a href="mailto:rajamithran621@gmail.com" class="contact-item-value">rajamithran621@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-item-label">Location</span>
+              <span class="contact-item-value">Madurai, Tamil Nadu, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-available reveal reveal-delay-3">
+          <p>Open to full-time roles &amp; freelance projects</p>
+          <span>UI/UX Designer · Product Designer</span>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form reveal reveal-delay-2">
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Your Name</label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <div id="form-status" class="form-status" aria-live="polite"></div>
+          <button type="submit" id="form-submit" class="btn-submit">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            <span>Send Message</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-logo">MR<span>.</span></span>
+      <span class="footer-copy">© <span id="year"></span> Mithran R. All rights reserved.</span>
+      <a href="#hero" class="footer-back" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M18 15l-6-6-6 6"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
